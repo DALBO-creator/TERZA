@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Personale</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #333; color: white; padding: 20px; text-align: center; }
+    section { padding: 20px; }
+    .card {
+      background: #f4f4f4;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mario Rossi</h1>
+    <p>Sviluppatore Web</p>
+  </header>
+
+  <section>
+    <h2>Progetti</h2>
+    <div class="card">Sito vetrina per ristorante</div>
+    <div class="card">Blog fotografico</div>
+    <div class="card">Applicazione To-Do</div>
+  </section>
+</body>
+</html>
