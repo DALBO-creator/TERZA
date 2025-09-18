@@ -1,0 +1,190 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar verticale */
+/* Sidebar verticale moderna */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  background: linear-gradient(180deg, #0a001a, #1a0033);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.5);
+  transition: width 0.3s ease;
+}
+
+.sidebar .logo {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #8c00ff;
+  text-align: center;
+  width: 100%;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.sidebar nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar nav a:hover {
+  background: #330066;
+  color: #ffccff;
+  transform: translateX(5px);
+  box-shadow: 0 0 10px #8c00ff;
+}
+
+
+/* Main content */
+.main-content {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #1a0033, #00001a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 4em;
+  color: #8c00ff;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.hero-text .btn {
+  padding: 12px 30px;
+  background: #4d00ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.hero-text .btn:hover {
+  background: #6600ff;
+  transform: scale(1.1);
+}
+
+/* Sections */
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+.section.dark {
+  background: #0a001a;
+  color: #fff;
+}
+.section.light {
+  background: #1a0033;
+  color: #ccc;
+}
+
+/* Cards pianeti e missioni */
+.planet-cards, .mission-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+.card {
+  background: #220044;
+  border-radius: 15px;
+  width: 200px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(140,0,255,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card img { width: 100%; display: block; }
+.card h3 { padding: 10px; color: #8c00ff; text-align: center; }
+.card:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(140,0,255,0.7);
+}
+
+/* Galleria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s, filter 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* Form contatti */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input, .contact-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: #1a0033;
+  color: #ccc;
+}
+.contact-form button {
+  padding: 12px;
+  background: #8c00ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #b300ff;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #0a001a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
